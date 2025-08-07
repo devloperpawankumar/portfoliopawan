@@ -11,6 +11,18 @@ app.use(cors({origin: 'https://pawanportfolio-plum.vercel.app',
   credentials: true
 }
 ))
+
+// Extra manual headers (Vercel sometimes requires this)
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://pawanportfolio-plum.vercel.app');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
+app.options('*', (req, res) => {
+  res.sendStatus(200);
+});
 const port=process.env.PORT;
 // hh
 
