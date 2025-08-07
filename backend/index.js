@@ -9,6 +9,8 @@ app.use(express.json())
 app.use(cors({origin: 'https://pawanportfolio-plum.vercel.app/'}))
 const port=process.env.PORT;
 
+
+// hi
 app.get("/",(req,res)=>{
     res.send("welcome it is working")
 })
