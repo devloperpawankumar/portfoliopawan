@@ -6,7 +6,11 @@ require('dotenv').config()
 app.use(express.json())
 
 
-app.use(cors({origin: 'https://pawanportfolio-plum.vercel.app/'}))
+app.use(cors({origin: 'https://pawanportfolio-plum.vercel.app/',
+    methods: ['GET', 'POST'],
+  credentials: true
+}
+))
 const port=process.env.PORT;
 
 
