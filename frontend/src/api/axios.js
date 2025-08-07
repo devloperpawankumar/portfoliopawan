@@ -1,3 +1,3 @@
-const api='http://localhost:8080';
+const api='https://portfoliopawan-rosy.vercel.app';
 
 export default api
