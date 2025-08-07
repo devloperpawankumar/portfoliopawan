@@ -6,23 +6,11 @@ require('dotenv').config()
 app.use(express.json())
 
 
-// app.use(cors({origin: 'https://pawanportfolio-plum.vercel.app',
-//     methods: ['GET', 'POST'],
-//   credentials: true
-// }
-// ))
-
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://pawanportfolio-plum.vercel.app');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  res.setHeader('Access-Control-Allow-Credentials', 'true');
-  if (req.method === 'OPTIONS') {
-    return res.sendStatus(200);
-  }
-  next();
-});
-
+app.use(cors({origin: 'https://pawanportfolio-plum.vercel.app',
+    methods: ['GET', 'POST'],
+  credentials: true
+}
+))
 
 // Extra manual headers (Vercel sometimes requires this
 const port=process.env.PORT;
