@@ -102,12 +102,12 @@ const Projects: React.FC = () => {
   },
   {
   id: 8,
-  title: 'AutoCare Pro Car Service Website',
+  title: 'Car Service Website',
   category: 'Frontend',
   description: 'Built a clean and responsive automotive service site highlighting key offerings (oil change, brake service, engine diagnostics), customer testimonials, and transparent features like honest pricing and quality assurance.',
   image: '/CarService.png',
   tech: ['HTML', 'CSS', 'Javascript', 'Bootstrap'],
-  liveUrl: 'https://carservicepro.netlify.app/',
+  liveUrl: 'https://carserviceweb.netlify.app/',
  
 }
 
