@@ -21,7 +21,7 @@ const About: React.FC = () => {
           <div className="relative">
             <div className="bg-gradient-to-br from-purple-500/20 to-teal-500/20 rounded-2xl p-8 backdrop-blur-sm border border-white/10">
               <img
-                src="/images/pk2.jpeg"
+                src="/images/Profile.jpg"
                 alt="Developer at work"
                 className="w-full h-100 object-cover rounded-xl shadow-lg"
               />

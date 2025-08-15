@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle} from 'lucide-react';
 
 const WhatsAppButton: React.FC = () => {
   const handleWhatsAppClick = () => {
