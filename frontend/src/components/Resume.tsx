@@ -5,8 +5,8 @@ const Resume: React.FC = () => {
   const handleDownloadResume = () => {
    // this would trigger a download
     const link = document.createElement("a");
-  link.href = "/pawan-kumar-resume.pdf"; // File is in public folder
-  link.download = "pawan-kumar-resume.pdf"; 
+  link.href = "/Resume.pdf"; // File is in public folder
+  link.download = "Resume.pdf"; 
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
